@@ -22,7 +22,7 @@ class Home extends StatelessWidget {
               "CTEVT Result", "https://itms.ctevt.org.np:5580/check_results"),
           containerBox("NEB Result", "https://neb.ntc.net.np/results.php"),
           containerBox("TU Result", "https://tuexam.edu.np/otuexam/tuexam/"),
-          containerBox("KU Result", "https://ku.edu.np/news-app?tags=Result&search_site_name= "),
+          containerBox("KU Result", "https://ku.edu.np/news-app?tags=Result&search_site_name=kuhome"),
         ],
       ),
     );
@@ -39,9 +39,7 @@ class containerBox extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: GestureDetector(
-
         child: Container(
-          
           height: 100,
           width: 100,
           decoration: BoxDecoration(
@@ -55,7 +53,6 @@ class containerBox extends StatelessWidget {
         onTap: () {
         launchUrlString(url);
         },
-        
       ),
     );
   }
